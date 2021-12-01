@@ -2,7 +2,6 @@ import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "../components/global-style";
 import { theme } from "../util/theme";
-import "react-datetime/css/react-datetime.css";
 
 function MyApp({ Component, pageProps }) {
   return (
