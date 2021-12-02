@@ -1,42 +1,43 @@
+import Color from "color";
 import { shadeColor } from "./util";
 
 // Colors
-const primary = "#1461c7";
-const accent = "#eb6c23";
-const neutral = "#949191";
+const primary = Color("#1b5dc0");
+const accent = Color("#eb6c23");
+const neutral = Color("#949191");
 
 export const theme = {
   colors: {
     // Primary
-    primary100: shadeColor(primary, 80),
-    primary200: shadeColor(primary, 60),
-    primary300: shadeColor(primary, 40),
-    primary400: shadeColor(primary, 20),
-    primary500: shadeColor(primary, 0),
-    primary600: shadeColor(primary, -20),
-    primary700: shadeColor(primary, -40),
-    primary800: shadeColor(primary, -60),
-    primary900: shadeColor(primary, -80),
+    primary100: primary.lighten(0.8).hex(),
+    primary200: primary.lighten(0.6).hex(),
+    primary300: primary.lighten(0.4).hex(),
+    primary400: primary.lighten(0.2).hex(),
+    primary500: primary.lighten(0).hex(),
+    primary600: primary.lighten(-0.2).hex(),
+    primary700: primary.lighten(-0.4).hex(),
+    primary800: primary.lighten(-0.6).hex(),
+    primary900: primary.lighten(-0.8).hex(),
     // Accent
-    accent100: shadeColor(accent, 80),
-    accent200: shadeColor(accent, 60),
-    accent300: shadeColor(accent, 40),
-    accent400: shadeColor(accent, 20),
-    accent500: shadeColor(accent, 0),
-    accent600: shadeColor(accent, -20),
-    accent700: shadeColor(accent, -40),
-    accent800: shadeColor(accent, -60),
-    accent900: shadeColor(accent, -80),
+    accent100: accent.lighten(0.8).hex(),
+    accent200: accent.lighten(0.6).hex(),
+    accent300: accent.lighten(0.4).hex(),
+    accent400: accent.lighten(0.2).hex(),
+    accent500: accent.lighten(0).hex(),
+    accent600: accent.lighten(-0.2).hex(),
+    accent700: accent.lighten(-0.4).hex(),
+    accent800: accent.lighten(-0.6).hex(),
+    accent900: accent.lighten(-0.8).hex(),
     // Neutral
-    neutral100: shadeColor(neutral, 80),
-    neutral200: shadeColor(neutral, 60),
-    neutral300: shadeColor(neutral, 40),
-    neutral400: shadeColor(neutral, 20),
-    neutral500: shadeColor(neutral, 0),
-    neutral600: shadeColor(neutral, -20),
-    neutral700: shadeColor(neutral, -40),
-    neutral800: shadeColor(neutral, -60),
-    neutral900: shadeColor(neutral, -80),
+    neutral100: neutral.lighten(0.8).hex(),
+    neutral200: neutral.lighten(0.6).hex(),
+    neutral300: neutral.lighten(0.4).hex(),
+    neutral400: neutral.lighten(0.2).hex(),
+    neutral500: neutral.lighten(0).hex(),
+    neutral600: neutral.lighten(-0.2).hex(),
+    neutral700: neutral.lighten(-0.4).hex(),
+    neutral800: neutral.lighten(-0.6).hex(),
+    neutral900: neutral.lighten(-0.8).hex(),
   },
   fontSizes: [14, 16, 18, 20, 24, 28, 36],
   fontWeights: {
