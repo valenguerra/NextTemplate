@@ -1,5 +1,4 @@
 import Color from "color";
-import { shadeColor } from "./util";
 
 // Colors
 const primary = Color("#1b5dc0");
