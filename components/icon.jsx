@@ -11,7 +11,7 @@ export const Icon = styled.svg`
   color: inherit;
   overflow: visible;
   ${p => getSize(p)}
-  ${p => p.strokeWidth ?? `strokeWidth: ${p.strokeWidth}`}
+  ${p => p.strokeWidth ?? `strokeWidth: ${p.strokeWidth};`}
   ${p =>
     p.button &&
     css`
